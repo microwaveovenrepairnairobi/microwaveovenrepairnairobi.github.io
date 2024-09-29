@@ -68,9 +68,18 @@
   }]
 }
 </script>
-		
+
+
+<script>
+
+function getarea(){
+	let url = new URL('https://microwaveovenrepairnairobi.github.io/area?place=1');
+	let searchParams = new URLSearchParams(url.search);
+	alert(searchParams.get('place'));
+}	
+</script>
     </head>
-    <body>
+    <body onLoad="getarea()">
 	
 		 
 		
