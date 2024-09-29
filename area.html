@@ -73,10 +73,15 @@
 <script>
 
 function getarea(){
-	let url = new URL('https://microwaveovenrepairnairobi.github.io/area?place=1');
-	let searchParams = new URLSearchParams(url.search);
-	alert(searchParams.get('place'));
+	var vars = {};
+    	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+    	function(m,key,value) {
+      	vars[key] = value;
+    });
+	var fType = getUrlVars()["place"];
+    alert(fType);
 }	
+
 </script>
     </head>
     <body onLoad="getarea()">
