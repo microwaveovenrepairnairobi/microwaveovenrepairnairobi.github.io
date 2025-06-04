@@ -1,3 +1,0 @@
-Sitemap: https://microwaveovenrepairnairobi.github.io/sitemap.xml
-User-agent: *
-Disallow:
